@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/styles.css"/>
+<link rel="stylesheet" href="css/pcStyles.css"/>
+	<title>ChatGPT</title>
+	<script>
+var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+
+if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+
+function mischandler(){
+return false;
+}
+
+function mousehandler(e){
+var myevent = (isNS) ? e : event;
+var eventbutton = (isNS) ? myevent.which : myevent.button;
+if((eventbutton==2)||(eventbutton==3)) return false;
+}
+document.oncontextmenu = mischandler;
+document.onmousedown = mousehandler;
+document.onmouseup = mousehandler;
+</script>
+</head>
+<body scroll="no">
+	<div id="container"></div>
+	<div id="loader" class="overlay">
+		<div class="loader_container">
+			<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+		</div>
+	</div>
+	
+	<script src="js/libs/CSInterface.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

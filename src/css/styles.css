@@ -1,0 +1,216 @@
+
+html {
+	overflow-x: hidden;
+	overflow-y: hidden;
+	
+}
+
+body {
+	position: relative;
+	display: inline-block;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+#container {
+	position: relative;
+	display: inline-block;
+	width: 90vw;
+	height: 90vh;
+}
+
+#usernameInput {
+	position: relative;
+	display: inline-block;
+	height: 30px;
+	width: 350px;
+	border: none;
+	outline: none;
+	border-radius: 15px;
+	color: white;
+	background-color: #111111;
+	padding-left: 10px;
+}
+
+#loginButton {
+	width: 200px;
+	height: 30px;
+	border-radius: 15px;
+	position: relative;
+	display: inline-block;
+	background-color: #363636;
+	color: white;
+	padding-top: 15px;
+	text-align: center;
+}
+
+#loginButton:hover {
+	cursor: pointer;
+}
+
+#imageHolder {
+	width: 512px;
+	height: 512px;
+	position: relative;
+	display: inline-block;
+}
+
+.imagePreview {
+	width: 246px;
+	height: 246px;
+	position: relative;
+	display: inline-block;
+}
+
+.imagePreview {
+	cursor: pointer;
+}
+
+#imagePrompt {
+	position: relative;
+	display: inline-block;
+	height: 30px;
+	width: 350px;
+	border: none;
+	outline: none;
+	border-radius: 15px;
+	color: white;
+	background-color: #111111;
+	padding-left: 10px;
+}
+
+#submitButton {
+	width: 150px;
+	height: 25px;
+	border-radius: 15px;
+	position: relative;
+	display: inline-block;
+	background-color: #363636;
+	color: white;
+	padding-top: 5px;
+	text-align: center;
+	opacity: .7;
+}
+
+#submitButton:hover {
+	cursor: pointer;
+	opacity: 1;
+}
+
+#regButton:hover {
+	cursor: pointer;
+}
+
+.loader_container{
+    position: absolute;
+    transform: translate(50vw, 35vh);
+	text-align: center;
+}
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ellipsis div {
+    position: absolute;
+    top: 33px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #c723dd 0%, #7e7e1e 100%);
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  }
+  .lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 0.6s infinite;
+  }
+  @keyframes lds-ellipsis1 {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes lds-ellipsis3 {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  @keyframes lds-ellipsis2 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(24px, 0);
+    }
+  }
+
+  .overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	backdrop-filter: blur(3px);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+  }
+
+  .overlay:target {
+	visibility: visible;
+	opacity: 1;
+  }
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 13px;
+    opacity: 0;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+opacity: 0;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(17, 17, 17, 1); 
+    opacity: 0;
+}
+
+F
+::-webkit-scrollbar-button {
+	height: 10px;
+	width: 13px;
+	background: rgba(70, 70, 70, 1); 
+	opacity: 0;
+}
+
+::-webkit-scrollbar-button:vertical:increment {
+	width: 13px;
+	opacity: 0;
+}
+
+::-webkit-scrollbar-button:vertical:decrement {
+	width: 13px;
+	opacity: 0;
+}
